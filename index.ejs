@@ -7,8 +7,14 @@
 
 <body>
 
-<% if (sounds) { %>
-<div><%= sounds %></div>
+<% if (!!sounds) { %>
+    <ul>
+        <% for(var i in sounds) { %>
+            <% if (sounds.hasOwnProperty(i)) { %>
+                <li><%= sounds[i] %></li>
+            <% } %>
+        <% } %>
+    </ul>
 <% } %>
 
 </body>
