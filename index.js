@@ -1,10 +1,28 @@
 'use strict';
 
-var http = requere('http');
+var express = require('express');
+var ejs = require('ejs');
+
+var app = new express();
+
+app.set('port', process.env.PORT || 3000);
+app.set('view engine', 'ejs');
+
+app.set('views', __dirname);
+app.use(express.static(__dirname));
+
+app.set('view options', {
+    layout: false
+});
+
+var server = app.listen(app.get('port'));
 
 var sounds = require('./sounds.json');
 
-http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello World\n');
-}).listen(1337, '127.0.0.1');
+app.get('/', function(req, res) {
+
+    res.render('index', {
+        sounds: sounds
+    });
+
+});
