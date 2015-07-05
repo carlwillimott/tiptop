@@ -3,6 +3,7 @@
 
 <head>
     <title>Sounds Demo</title>
+    <script src="./static.js"></script>
 </head>
 
 <body>
@@ -11,7 +12,7 @@
     <ul>
         <% for(var i in sounds) { %>
             <% if (sounds.hasOwnProperty(i)) { %>
-                <li><%= sounds[i] %></li>
+                <li><a class="button" data-speech="<%= sounds[i] %>"><%= sounds[i] %></a></li>
             <% } %>
         <% } %>
     </ul>
