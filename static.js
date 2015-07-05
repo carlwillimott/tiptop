@@ -1,21 +1,18 @@
-(function(window, document) {
+(function(window, document, responsiveVoice) {
 
     window.onload = function() {
 
         var buttons = document.getElementsByClassName('button');
 
         if (buttons) {
-
             for (var i = 0; i < buttons.length; i++) {
-
                 buttons[i].addEventListener('click', function(e) {
-                    alert("click");
+                    var text = this.getAttribute('data-speech');
+                    responsiveVoice.speak(text);
                 });
-
             }
-
         }
 
     };
 
-})(window, document);
+})(window, document, responsiveVoice);
