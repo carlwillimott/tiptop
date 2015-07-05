@@ -3,6 +3,7 @@
 
 <head>
     <title>Sounds Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
     <script src="./static.js"></script>
 </head>
@@ -10,13 +11,13 @@
 <body>
 
 <% if (!!sounds) { %>
-    <ul>
+    <div>
         <% for(var i in sounds) { %>
             <% if (sounds.hasOwnProperty(i)) { %>
-                <li><a class="button" data-speech="<%= sounds[i] %>"><%= sounds[i] %></a></li>
+                <div><a class="button btn btn-primary btn-lg" href="#" data-speech="<%= sounds[i] %>"><%= sounds[i] %></a></div>
             <% } %>
         <% } %>
-    </ul>
+    </div>
 <% } %>
 
 </body>
