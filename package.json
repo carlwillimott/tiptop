@@ -1,0 +1,10 @@
+{
+  "name": "tiptop",
+  "version": "1.0.0",
+  "description": "A simple soundboard using the responsive voice js API.",
+  "author": "Carl Willimott <carlwillimott@googlemail.com>",
+  "dependencies": {
+    "ejs": "*",
+    "express": "*"
+  }
+}
