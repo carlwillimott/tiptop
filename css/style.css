@@ -1,8 +1,12 @@
 /* line 3, style.scss */
+.tiptop .title {
+  text-align: center;
+}
+/* line 7, style.scss */
 .tiptop .each {
   margin-top: 15px;
 }
-/* line 7, style.scss */
+/* line 11, style.scss */
 .tiptop .each a {
   width: 100%;
 }

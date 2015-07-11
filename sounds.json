@@ -1,6 +1,43 @@
 {
-  "hello" : "hello",
-  "bye" : "bye",
-  "yes" : "yes",
-  "no" : "no"
+  "General": {
+    "hello": {
+      "text": "Hello",
+      "speak": "Hello"
+    },
+    "bye": {
+      "text": "Bye",
+      "speak": "Bye"
+    },
+    "yes": {
+      "text": "Yes",
+      "speak": "Yes"
+    },
+    "no": {
+      "text": "No",
+      "speak": "No"
+    }
+  },
+  "Other": {
+    "how": {
+      "text": "How",
+      "speak": "How"
+    },
+    "what": {
+      "text": "What",
+      "speak": "What"
+    },
+    "when": {
+      "text": "When",
+      "speak": "When"
+    },
+    "where": {
+      "text": "Where",
+      "speak": "Where"
+    },
+    "why": {
+      "text": "Why",
+      "speak": "Why"
+    }
+  }
+
 }

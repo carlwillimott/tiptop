@@ -16,7 +16,15 @@
         <% for(var i in sounds) { %>
             <div class="each">
                 <% if (sounds.hasOwnProperty(i)) { %>
-                    <a class="button btn btn-primary btn-lg" href="#" data-speech="<%= sounds[i] %>"><%= sounds[i] %></a>
+                    <% var grouped = sounds[i]; %>
+                    <h2 class="title"><%= i %></h2>
+                    <% for(var j in grouped) { %>
+                        <% if (grouped.hasOwnProperty(j)) { %>
+                            <div class="each">
+                                <a class="button btn btn-primary btn-lg" href="#" data-speech="<%= grouped[j].speak %>"><%= grouped[j].text %></a>
+                            </div>
+                        <% } %>
+                    <% } %>
                 <% } %>
             </div>
         <% } %>
