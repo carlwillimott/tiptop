@@ -5,7 +5,6 @@
   "author": "Carl Willimott <carlwillimott@googlemail.com>",
   "dependencies": {
     "ejs": "*",
-    "express": "*",
-    "forever": "*"
+    "express": "*"
   }
 }
