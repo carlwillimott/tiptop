@@ -5,7 +5,7 @@ var ejs = require('ejs');
 
 var app = new express();
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 1920);
 app.set('view engine', 'ejs');
 
 app.set('views', __dirname);
