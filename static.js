@@ -1,6 +1,6 @@
 (function(window, document, $, responsiveVoice) {
 
-    window.onload = function() {
+    $(document).ready(function() {
 
         var setup = {
 
@@ -59,6 +59,6 @@
 
         setup.init();
 
-    };
+    });
 
 })(window, document, jQuery, responsiveVoice);
