@@ -1,12 +1,20 @@
-/* line 3, style.scss */
+/* line 1, style.scss */
+.tiptop {
+  margin-bottom: 15px;
+}
+/* line 5, style.scss */
+.tiptop .switcher {
+  margin-top: 15px;
+}
+/* line 9, style.scss */
 .tiptop .title {
   text-align: center;
 }
-/* line 7, style.scss */
+/* line 13, style.scss */
 .tiptop .each {
   margin-top: 15px;
 }
-/* line 11, style.scss */
+/* line 17, style.scss */
 .tiptop .each a {
   width: 100%;
 }

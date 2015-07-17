@@ -1,18 +1,23 @@
-(function(window, document, responsiveVoice) {
+(function(window, document, $, responsiveVoice) {
 
     window.onload = function() {
 
-        var buttons = document.getElementsByClassName('button');
+        var buttons = $('.button');
 
-        if (buttons) {
-            for (var i = 0; i < buttons.length; i++) {
-                buttons[i].addEventListener('click', function(e) {
-                    var text = this.getAttribute('data-speech');
-                    responsiveVoice.speak(text);
-                });
-            }
+        if (!!buttons.length) {
+
+            buttons.on('click', function() {
+                responsiveVoice.speak($(this).data('speech'));
+            });
+
         }
+
+        var switcher = $('#language-switcher');
+
+        switcher.on('change', function() {
+            responsiveVoice.setDefaultVoice($(this).val());
+        });
 
     };
 
-})(window, document, responsiveVoice);
+})(window, document, jQuery, responsiveVoice);
